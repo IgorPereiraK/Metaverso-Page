@@ -20,19 +20,19 @@ function App() {
           </a>
           <nav className="skew-x-[10deg]">
             <ul className="flex gap-10">
-              <li className="text-gray">
+              <li className="text-gray relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:bg-primary after:w-0 after:h-0.5 hover:after:w-full after:transition-[width] after:duration-300">
                 <a>Home</a>
               </li>
-              <li className="text-gray">
+              <li className="text-gray relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:bg-primary after:w-0 after:h-0.5 hover:after:w-full after:transition-[width] after:duration-300">
                 <a>Como funciona</a>
               </li>
-              <li className="text-gray">
+              <li className="text-gray relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:bg-primary after:w-0 after:h-0.5 hover:after:w-full after:transition-[width] after:duration-300">
                 <a>Descubra</a>
               </li>
-              <li className="text-gray">
+              <li className="text-gray relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:bg-primary after:w-0 after:h-0.5 hover:after:w-full after:transition-[width] after:duration-300">
                 <a>Sobre nós</a>
               </li>
-              <li className="text-gray">
+              <li className="text-gray relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:bg-primary after:w-0 after:h-0.5 hover:after:w-full after:transition-[width] after:duration-300">
                 <a>Blog</a>
               </li>
             </ul>
@@ -56,12 +56,50 @@ function App() {
             ganham vida.
           </h2>
           <Button text="Entrar na lista de espera" />
+          <div className="flex gap-4 mt-16">
+            <div className="flex">
+              <div className="w-12 h-12 border-2 border-gray rounded-full flex justify-center items-center">
+                <img
+                  src="/assets/expert1.jpg"
+                  alt="especialistas"
+                  className="w-full h-full rounded-full object-cover"
+                />
+              </div>
+              <div className="w-12 h-12 border-2 border-gray rounded-full flex justify-center items-center -ml-3">
+                <img
+                  src="/assets/expert2.jpg"
+                  alt="especialistas"
+                  className="w-full h-full rounded-full object-cover"
+                />
+              </div>
+              <div className="w-12 h-12 border-2 border-gray rounded-full flex justify-center items-center text-light bg-btn-bg -ml-3">
+                <p>+91</p>
+              </div>
+            </div>
+            <div className="text-lg max-w-44 text-light">
+              <p>Conecte-se com nossos especialistas</p>
+            </div>
+          </div>
         </div>
         <div className="flex-1">
           <img
             src="/assets/img1.png"
             alt="Pessoa com oculos de realidade virtual"
           />
+        </div>
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[1366px] flex justify-between py-8 px-8 backdrop-blur-xl rounded-tl-md rounded-tr-md">
+          <div className="flex items-center gap-2 text-light">
+            <h3 className="text-5xl font-primary font-medium">538K+</h3>
+            <h3 className="text-lg">Usuários</h3>
+          </div>
+          <div className="flex items-center gap-2 text-light">
+            <h3 className="text-5xl font-primary font-medium">2000+</h3>
+            <h3 className="text-lg">Realidades descobertas</h3>
+          </div>
+          <div className="flex items-center gap-2 text-light">
+            <h3 className="text-5xl font-primary font-medium">850+</h3>
+            <h3 className="text-lg">Atualizações</h3>
+          </div>
         </div>
       </main>
     </div>
